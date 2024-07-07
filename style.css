@@ -1,3 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #f6f6f6;
+    font-family: "Montserrat", sans-serif;
+    line-height: 35px;
+    color: #262f42;
+}
+
+.header {
+    background-color: #262f42;
+    margin-bottom: 30px;
+}
+
+.nav {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 30px 15px;
+    transition: all .2s ease-in-out;
+}   
+
+.menu-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f6f6f6;
+    font-size: 16px;
+    filter: drop-shadow(5px 5px 4px #f6f6f6);
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}   
+
+.container {
+    width: 80%;
+    margin: auto;   
+}
+
+.section {
+    padding: 15px 0;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .photo {
-    width: 150px;
+    width: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px #aaaaaa);
+    margin-bottom: 20px;
+    }
+    
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-details {
+    font-weight: 400;
+    }
+
+.address::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/location-dot-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #53769a;
+}
+
+.phone::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/phone-solid.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    transform: translateY(20%);
+}
+
+.email::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/envelope-solid.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    transform: translateY(20%);
+}
+
+.section-title {
+    background-color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.section-name {
+    color: #262f42;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    filter: drop-shadow(5px 5px 4px #262f42);
+
+}
+
+.objective-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/paperclip-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.text {
+    text-align: justify;
+}
+
+.skills-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/bolt-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.skills-detail {
+    column-count: 2;
+}
+
+.items {
+    list-style: none;
+}
+
+.items::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/square-check-solid.svg');
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    transform: translateY(10%);
+}
+
+.code-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/code-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.code-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.highlight {
+    background-color: #aaaaaa;
+    width: 90%;
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-snippet {
+    line-height: 18px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.experience-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/briefcase-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.experience-detail {
+    margin-left: 25px;
+}
+
+.projects-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/gear-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.projects-detail {
+    column-count: 2;
+}
+
+.projects-item {
+    transition: all .2s ease-in-out;
+}
+
+.projects-item:hover {
+    font-size: 20px;
+}
+
+.projects-link {
+    text-decoration: none;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 4px #aaaaaa);
+    color: #53769a;
+}
+
+.education-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/user-graduate-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.language-section-name::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/language-solid.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(20%);
+}
+
+.footer {
+    background-color: #262f42;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 15px;
+}
+
+.footer-item {
+    color: #f6f6f6;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.footer-link {
+    text-decoration: none;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 4px #f6f6f6);
+}
+
+.github-link::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('assets/svg/github.svg');
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    transform: translateY(20%);
+}
+
+.rs-school {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rsschool-img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+} 
+
+@media all and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
 }
