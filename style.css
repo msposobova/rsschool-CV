@@ -78,6 +78,8 @@ body {
 
 .contact-details {
     font-weight: 400;
+    list-style: none;
+    margin-bottom: 5px;
     }
 
 .address::before {
