@@ -14,6 +14,11 @@ body {
     color: #262f42;
 }
 
+.body-container {
+    max-width: 1550px; 
+    margin: 0 auto;
+}
+
 .header {
     background-color: #262f42;
     margin-bottom: 30px;
